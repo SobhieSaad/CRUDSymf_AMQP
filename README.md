@@ -16,6 +16,7 @@ then used fetch function to get user id from button clicked to delete it from DB
 * for getting user per passed id i used find function which takes id as parameter.
 
 ===================
+
 for tests:
 Postman test passed on path (/users/create) with post request and json data with.
 
@@ -27,10 +28,14 @@ Test run using php bin/phpunit or php bin/phpunit class_test_name
 
 for Behat test:
 I downloaded the symfony2 extension and mink extension for behat.
-then creatign feature GetUserPerId in features folder that call FeatureContext.php with parameters same as in /**when*/ and /**Senario*/  to do the function from kernel.
+then creatign feature GetUserPerId in features folder that call FeatureContext.php with parameters same as in 
+/**when*/ and /**Senario*/  to do the function from kernel.
 
 **for Docker appologize me since as I explained to you that my CPU doesn't support virtualization.**
+
+
 ================
+
 Note:
 If you want to see another implement from amqp, you need to remove the constructor from Users entity and all the calls from 
 UsersController.php that pass array when call (new Users([])) then you can path at line 125 in UsersController.php class a new instance from /src/Message/Event/SmsNotification.php
@@ -39,7 +44,9 @@ connection,exchange and channel) which build a queue and open connection to user
 then pass the Message.
 Also if you need to see message example only in serial case you can un-comment code in srs/MessageHandler/SmsNotificationHandler.php from line# 87 to the end, as it uses mailtro mailer to send messages, defined in .env file 
 at line 38
+
 ===================
+
 I wish you find all well.
 Waiting your kind reply.
 
